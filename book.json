@@ -4,11 +4,9 @@
     "description": "select * from learn",
     "language": "zh-hans",
     "gitbook": "3.2.3",
+    "plugins": ["mathjax"],
     "styles": {
         "website": "./styles/website.css"
-    },
-    "structure": {
-        "readme": "README.md"
     },
     "links": {
         "sidebar": {
