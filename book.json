@@ -1,57 +1,42 @@
 {
-    "title": "Blankj's Glory",
+    "title": "ws_zzy's book",
     "author": "ws_zzy",
     "description": "select * from learn",
     "language": "zh-hans",
     "gitbook": "3.2.3",
-    "plugins": ["mathjax"],
-    "styles": {
-        "website": "./styles/website.css"
-    },
+    "plugins": ["mathjax", "github", "sharing", "tbfed-pagefooter", "donate"],
     "links": {
         "sidebar": {
-            "我的狗窝": "https://blankj.com"
+            "我的随笔": "http://zzy.life"
         }
     },
     "pluginsConfig": {
         "github": {
-            "url": "https://github.com/ws_zzy"
-        },
-        "github-buttons": {
-            "buttons": [{
-                "user": "ws_zzy",
-                "repo": "glory",
-                "type": "star",
-                "size": "small",
-                "count": true
-                }
-            ]
+            "url": "https://github.com/ws-zzy"
         },
         "sharing": {
-            "douban": false,
-            "facebook": false,
-            "google": false,
-            "hatenaBookmark": false,
-            "instapaper": false,
-            "line": false,
-            "linkedin": false,
-            "messenger": false,
-            "pocket": false,
-            "qq": false,
-            "qzone": false,
-            "stumbleupon": false,
-            "twitter": false,
-            "viber": false,
-            "vk": false,
             "weibo": false,
-            "whatsapp": false,
+            "facebook": false,
+            "twitter": false,
             "all": [
-                "google", "facebook", "weibo", "twitter",
-                "qq", "qzone", "linkedin", "pocket"
+                "weibo", "facebook", "twitter"
             ]
         },
-        "anchor-navigation-ex": {
-            "showLevel": false
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy ws_zzy",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "donate": {
+            "wechat": "https://zhangjikai.com/resource/weixin.png",
+            "alipay": "https://zhangjikai.com/resource/alipay.png",
+            "title": "",
+            "button": "赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
         }
+    },
+    "theme-default": {
+        "showLevel": true
     }
 }
