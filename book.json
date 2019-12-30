@@ -4,7 +4,7 @@
     "description": "select * from learn",
     "language": "zh-hans",
     "gitbook": "3.2.3",
-    "plugins": ["mathjax", "github", "sharing", "tbfed-pagefooter", "donate"],
+    "plugins": ["mathjax", "github", "sharing", "page-footer-ex", "donate"],
     "links": {
         "sidebar": {
             "我的随笔": "http://zzy.life"
@@ -22,10 +22,11 @@
                 "weibo", "facebook", "twitter"
             ]
         },
-        "tbfed-pagefooter": {
-            "copyright":"Copyright &copy ws_zzy",
-            "modify_label": "该文件修订时间：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        "page-footer-ex": {
+            "copyright": "By <em>ws_zzy</em>",
+            "markdown": false,
+            "update_label": "<i>updated</i>",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
         },
         "donate": {
             "wechat": "https://raw.githubusercontent.com/ws-zzy/ws-zzy.github.io/master/resource/weixin.png",
