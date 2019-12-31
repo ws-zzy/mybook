@@ -1,4 +1,4 @@
-在数学中，**傅里叶级数**（**fourier series**，[/ˈfʊrieɪ, -iər/]）是把类似波的函数表示成简单正弦波的方式。更正式地说，它能将任何周期函数或周期信号分解成一个（可能由无穷个元素组成的）简单振荡函数的集合，即正弦函数和余弦函数（或者，等价地使用[复指数](https://zh.wikipedia.org/wiki/复指数)
+在数学中，**傅里叶级数**（**fourier series**，[/ˈfʊrieɪ, -iər/]）是把类似波的函数表示成简单正弦波的方式。更正式地说，它能将任何周期函数或周期信号分解成一个（可能由无穷个元素组成的）简单振荡函数的集合，即正弦函数和余弦函数（或者，等价地使用[复指数](https://zh.wikipedia.org/wiki/复指数))
 
 ## 基础知识
 
@@ -19,6 +19,13 @@ $$
 \int_{-\pi}^{\pi}sin nx \cdot sin mx dx = \frac{1}{2}\int_{-\pi}^{\pi}[cos(n-m)x - cos(m+n)x ]dx = 0, m \neq n \\
 $$
 
+另外
+$$
+\int_{-\pi}^{\pi}cos^2 nx dx = \int_{-\pi}^{\pi}\frac{1+cos 2nx}{2} dx = \pi\\
+\int_{-\pi}^{\pi}sin^2 nx dx = \int_{-\pi}^{\pi}\frac{1-cos 2nx}{2} dx = \pi\\
+$$
+
+
 ## 推导过程
 
 设三角函数式$\frac{a_0}{2}+\sum_{i=1}^{\infty}(a_n cos nx+b_n sin nx)$，一致收敛到$f(x)$，则
@@ -31,7 +38,8 @@ f(x)cos mx = \frac{a_0 cos mx}{2}+\sum_{i=1}^{\infty}(a_n cos nx cos mx+b_n sin 
 $$
 积分得
 $$
-\int_{-\pi}^{\pi}f(x)cos mx dx = \int_{-\pi}^{\pi}\frac{a_0 cos mx}{2} dx+\sum_{i=1}^{\infty}(a_n \int_{-\pi}^{\pi}cos nx cos mx dx+b_n\int_{-\pi}^{\pi}sin nx cos mx dx) \\
+\int_{-\pi}^{\pi}f(x)cos mx dx = \\ 
+\int_{-\pi}^{\pi}\frac{a_0 cos mx}{2} dx+\sum_{i=1}^{\infty}(a_n \int_{-\pi}^{\pi}cos nx cos mx dx+b_n\int_{-\pi}^{\pi}sin nx cos mx dx) \\
 = \pi a_m
 $$
 得到
@@ -42,6 +50,7 @@ $$
 $$
 b_m = \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)sin mx dx, m = 1, 2, ...,
 $$
+
 $f(x) = \frac{a_0}{2}+\sum_{i=1}^{\infty}(a_n cos nx+b_n sin nx)$ 称为$f(x)$的`Fourier`级数
 
 ## 收敛条件
