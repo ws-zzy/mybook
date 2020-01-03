@@ -279,3 +279,23 @@ $$
 ##### 通解
 
 按照一阶线性微分方程求解即可。
+
+#### 欧拉方程
+
+$$
+x^{n}{\frac {d^{n}y}{dx^{n}}}+p_{1}x^{n-1}{\frac {d^{n-1}y}{dx^{n-1}}}+...+p_{n-1}x{\frac {dy}{dx}}+p_{n}y=f(x)
+$$
+
+##### 解法
+
+令$x= e^t$或$t=lnx$，则
+$$
+{\frac{dy}{dx}} = {\frac{dy}{dt}}{\frac{dt}{dx}}= {\frac{1}{x}}{\frac{dy}{dt}} \\{\frac{d^{2}y}{dx^{2}}} = {\frac{1}{x^2}}({\frac{d^2y}{dt^2}} - {\frac{dy}{dt}}) \\
+{\frac{d^{3}y}{dx^{3}}} = {\frac{1}{x^3}}({\frac{d^3y}{dt^3}} - 3{\frac{d^2y}{dt^2}} +2 {\frac{dy}{dt}}) \\
+...
+$$
+用$D$表示${\frac{d}{dt}}$，转化为
+$$
+x^{k}{\frac{d^{k}y}{dx^{k}}}=D(D-1)...(D-k+1)y
+$$
+转化为常系数的微分方程求解。
