@@ -158,6 +158,25 @@ $$
 x=\pm \int ^{y}{\frac {\mathrm {d} \lambda }{\sqrt {2\int ^{\lambda }F(\epsilon )\,\mathrm {d} \epsilon +C_{1}}}}+C_{2}
 $$
 
+#### 二阶可降阶，${\frac{d^2y}{dx^2}=f(x, {\frac{dy}{dx}})}$
+
+##### 解法
+
+令${\frac{dy}{dx} = p(x)}$，$\frac{d^2y}{dx^2}={\frac{dp}{dx}}$，则原方程变为
+$$
+{\frac{dp}{dx}} = f(x, p)
+$$
+
+
+#### 二阶可降阶，${\frac{d^2y}{dx^2}=f(y, {\frac{dy}{dx}})}$
+
+##### 解法
+
+令${\frac{dy}{dx} = p(x)}$，$\frac{d^2y}{dx^2}={\frac{dp}{dx}}={\frac{dp}{dy}} \cdot {\frac{dy}{dx}} = {\frac{dp}{dy}} \cdot p$，则原方程变为
+$$
+{\frac{dp}{dy}} = f(y, p)
+$$
+
 ## 线性方程 (最高到$n$阶)
 
 ####  一阶线性，非齐次的函数系数
