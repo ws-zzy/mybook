@@ -48,7 +48,7 @@ $$
 ##### 通解
 
 $$
-x=\int ^{u}{\frac {d\lambda }{a+bf(\lambda )}}+C
+x=\int ^{ax+by+c}{\frac {d\lambda }{a+bf(\lambda )}}+C
 $$
 
 ## 一般一阶微分方程
@@ -83,7 +83,7 @@ $$
 ##### 通解
 
 $$
-ln(Cx)=∫xyN(λ)dλλ[N(λ)−M(λ)]\ln(Cx)=\int ^{xy}{\frac {N(\lambda )\,d\lambda }{\lambda [N(\lambda )-M(\lambda )]}}\,\!
+\ln(Cx)=\int ^{xy}{\frac {N(\lambda ) d\lambda }{\lambda [N(\lambda )-M(\lambda )]}}
 $$
 
 如果$N=M$, 解为$xy=C$。
@@ -168,7 +168,7 @@ $$
 
 ##### 解法
 
-积分因子: $e∫xP(λ)dλe^{\int ^{x}P(\lambda )\,d\lambda }$。
+积分因子: $e^{\int ^{x}P(\lambda )\,d\lambda }$。
 
 ##### 通解
 
@@ -235,12 +235,28 @@ $$
 每个根 $\alpha _{j}$ 重复  $k_{j}$ 次，
 
 $$
-y_{c}=\sum _{j=1}^{n}\left(\sum _{\ell =1}^{k_{j}}C_{\ell }x^{\ell -1}\right)e^{\alpha _{j}x}
+y_{c}=\sum _{j=1}^{n} (\sum _{\ell =1}^{k_{j}}C_{\ell }x^{\ell -1})e^{\alpha _{j}x}
 $$
-对于一些复数值的 $αj$，令 $α = χj + iγj$，使用欧拉公式，前面结果中的一些项就可以写成
+对于一些复数值的 $\alpha_{j}$，令 $\alpha_{j} = \chi_{j} + i\gamma_{j}$，使用欧拉公式，前面结果中的一些项就可以写成
 
 $$
-C_{j}e^{\alpha _{j}x}=C_{j}e^{\chi _{j}x}\cos(\gamma _{j}x+\phi _{j})
+e^{\alpha _{j}x}=e^{\chi _{j}x}\cos(\gamma _{j}x+\phi _{j})
 $$
 
-的形式，其中 $ϕj$ 为任意常量（相移）。
+的形式，其中 $\phi _{j}$ 为任意常量（相移）。
+
+#### 伯努利方程
+
+$$
+{\frac {dy}{dx}}+P(x)y=Q(x){\frac {d^{n}y}{dx^{n}}}, n \neq 1, 2
+$$
+
+##### 解法
+
+变形为$y^{-n} \cdot {\frac{dy}{dx}} + P(x)y^{1-n}=Q(x)$
+
+令$z = y^{1-n}$，得${\frac{dz}{dx}} = (1-n)y^{-n}{\frac{dy}{dx}}$， 则${\frac{1}{1-n}}{\frac{dz}{dx}}+P(x)z=Q(x)$
+
+##### 通解
+
+按照一阶线性微分方程求解即可。
