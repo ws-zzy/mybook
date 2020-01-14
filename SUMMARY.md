@@ -11,3 +11,5 @@
 	* [傅里叶变换](calculus/Fourier_series.md)
 	* [二重积分](calculus/double_integral.md)
 	* [三重积分](calculus/triple_integral.md)
+* [错题本](collection/collection.md)
+	* [Dr. Evil Underscores](collection/codeforces_1285.md)
