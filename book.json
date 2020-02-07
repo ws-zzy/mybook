@@ -4,12 +4,7 @@
     "description": "select * from learn",
     "language": "zh-hans",
     "gitbook": "3.2.3",
-    "plugins": ["mathjax", "github", "sharing", "page-footer-ex", "donate"],
-    "links": {
-        "sidebar": {
-            "我的随笔": "http://zzy.life"
-        }
-    },
+    "plugins": ["mathjax", "github", "sharing", "page-footer-ex"],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/ws-zzy"
@@ -27,14 +22,6 @@
             "markdown": false,
             "update_label": "<i>updated</i>",
             "update_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "donate": {
-            "wechat": "https://raw.githubusercontent.com/ws-zzy/ws-zzy.github.io/master/resource/weixin.png",
-            "alipay": "https://raw.githubusercontent.com/ws-zzy/ws-zzy.github.io/master/resource/alipay.jpg",
-            "title": "",
-            "button": "赏",
-            "alipayText": "支付宝打赏",
-            "wechatText": "微信打赏"
         }
     },
     "theme-default": {

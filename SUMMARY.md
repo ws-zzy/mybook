@@ -4,6 +4,7 @@
 * [Algorithm](algorithm/algorithm.md)
 	* [FWT快速沃尔什变换](algorithm/FWT.md)
 	* [FFT快速傅里叶变换](algorithm/FFT.md)
+	* [Manacher算法](algorithm/Manacher.md)
 * [Risc-v](risc-v/risc-v.md)
 * [微积分](calculus/calculus.md)
 	* [无穷级数](calculus/infinite_series.md)
