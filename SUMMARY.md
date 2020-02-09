@@ -14,3 +14,4 @@
 	* [三重积分](calculus/triple_integral.md)
 * [错题本](collection/collection.md)
 	* [Dr. Evil Underscores](collection/codeforces_1285.md)
+	* [tweet counts per frequency](collection/tweet-counts-per-frequency.md)
