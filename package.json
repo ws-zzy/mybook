@@ -1,0 +1,19 @@
+{
+  "name": "mybook",
+  "version": "1.0.0",
+  "description": "### 目前学过的数学（不一定完全懂）",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-mathjax": "^1.1.2",
+    "gitbook-plugin-page-footer-ex": "^0.1.2",
+    "gitbook-plugin-sharing": "^1.0.2",
+    "mathjax": "^2.7.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
